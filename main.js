@@ -89,3 +89,47 @@ let candidateInfo = {
 }
 
 let registerHere = "https://sos.tn.gov/products/elections/register-vote"
+
+// _____________________________________________________________________
+
+// Advanced Challenge
+
+// FUNC 1: using a function to add a new img into an array inside an object
+
+candidateInfo.addImage = (newImg) => {
+  candidateInfo.imageGallery.push(newImg)
+}
+candidateInfo.addImage("CandidatePics/addThis.jpg");
+
+// FUNC 2:  add a new platform statement
+
+platformStatements.addNewStatement = (newStmt, stringValue) => {
+  platformStatements[newStmt] = stringValue
+}
+
+// FUNC 3: update an existing biography
+
+candidateInfo.newBio = (newBio) => {
+  candidateInfo.biography = newBio
+}
+// candidateInfo.newBio("this is your new bio");
+// console.log('new biography test:', candidateInfo.biography);
+
+// ______________________________________________________________________
+
+// FUNC 4: add new events into the calendar
+
+// calendarOfEvents.newEvent = (event, date, eventDescr, dateValue) => {
+//   {calendarOfEvents.push(event) = eventDescr,
+//   calendarOfEvents.push(date) = dateValue}
+// }
+
+// The above example didn't work, obviously, but want to keep it there for reference on my train of though. The below function works perfectly.
+
+calendarOfEvents.newEvent = (eventDescr, dateValue) => {
+  const newEvent = {
+    date: dateValue,
+    event: eventDescr
+  }
+  calendarOfEvents.push(newEvent)
+}
