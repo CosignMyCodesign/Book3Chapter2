@@ -48,13 +48,23 @@ let platformStatements = {
   taxes: "Lower taxes for the middle class",
   jobs: "We need to bring jobs back on-shore",
   infrastructure: "Transportation development is the top priority",
-  healthCare: "Affordable healthcare for all. No free shit",
-  crimeAndEnforcement: "Prison-reform is a must, our system is incredibly flawed"
+  healthCare: "Affordable healthcare for all. No freebies!",
+  crimeAndEnforcement: "Prison-reform is a must, our system is flawed"
 }
 
 let donationForm = "https://giveMeAllYoMoney.com"
 
-let calendarOfEvents = ["Campaign 1", "Charity-work", "Campaign 2", "Save the world", "Campaign 3"]
+let calendarOfEvents = [
+  {date: "8-15-18",
+   event: "Campaign 1"},
+  {date: "8-21-18",
+   event: "Charity Work" },
+  {date: "9-1-18",
+   event:"Campaign 2" },
+  {date: "9-8-18",
+   event:"Save the world"},
+  {date: "9-19-18",
+  event: "Campaign 3"}]
 
 let volunteerInformation  = { 
   name: "Gary",
@@ -69,10 +79,13 @@ let volunteerInformation  = {
   }
 }
 
-let biography = "A bunch of text about candidate. A bunch of text about candidate. A bunch of text about candidate. A bunch of text about candidate. A bunch of text about candidate. A bunch of text about candidate. A bunch of text about candidate."
+let candidateInfo = {
+  
+  biography: "Wonderwoman is a superhero appearing in American comic books published by DC Comics. She is a founding member of the Justice League, and an ambassador of the Amazon people. She has a strong interest in politics and has finally decided to accept the challenge.",
 
-let imageGallery = ["headshot1", "family-pic", "constituents-pic"]
+  imageGallery: ["CandidatePics/Headshot1.jpg", "CandidatePics/Family-Pic.jpg", "CandidatePics/Constituents.jpg"],
 
-let missionStatement = "blahblahblahblahblah"
+  missionStatement: "JUSTICE! One congressional district at a time."
+}
 
-let registerHere = "link to register here"
+let registerHere = "https://sos.tn.gov/products/elections/register-vote"
